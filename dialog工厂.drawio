@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="2">
   <diagram id="W4EcqGUdJFov06eHYmou" name="第 1 页">
     <mxGraphModel dx="3383" dy="1433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -142,6 +142,51 @@
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=19;" value="阶段一：静态自动注册" vertex="1">
           <mxGeometry height="30" width="209" x="221" y="534" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="so2haJO5JFxwsA6ysQkp" name="第 2 页">
+    <mxGraphModel dx="1406" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_9FaNPLwilTYSxNN7V19-1" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="1. 触发日志宏&#xa;(例如 LOG_INFO &lt;&lt; msg)" vertex="1">
+          <mxGeometry height="78" width="257" x="56.5" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-2" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="2. 级别判定&#xa;(是否大于配置级别?)" vertex="1">
+          <mxGeometry height="224" width="224" x="73" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="丢弃不处理" vertex="1">
+          <mxGeometry height="54" width="110" x="10" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;align=left;" value="&#xa;• 创建临时 Logger 对象&#xa;• 捕获上下文 (时间/文件名/函数名/行号)&#xa;• 将格式化文本写入Buffer" vertex="1">
+          <mxGeometry height="198" width="320" x="170" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;align=left;" value="&#xa;• 语句结束，触发 ~Logger 析构&#xa;• QMutexLocker 互斥加锁&#xa;• 将 Buffer 一次性写入 QTextStream&#xa;•  flush() 刷入物理文件&#xa;•  释放互斥锁并销毁对象" vertex="1">
+          <mxGeometry height="198" width="320" x="170" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-6" edge="1" parent="1" source="_9FaNPLwilTYSxNN7V19-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="_9FaNPLwilTYSxNN7V19-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-7" edge="1" parent="1" source="_9FaNPLwilTYSxNN7V19-2" style="startArrow=none;endArrow=block;exitX=0.13;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=18;labelBackgroundColor=none;" target="_9FaNPLwilTYSxNN7V19-3" value="拦截">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-8" edge="1" parent="1" source="_9FaNPLwilTYSxNN7V19-2" style="startArrow=none;endArrow=block;exitX=0.87;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=18;labelBackgroundColor=none;" target="_9FaNPLwilTYSxNN7V19-4" value="放行">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-9" edge="1" parent="1" source="_9FaNPLwilTYSxNN7V19-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="_9FaNPLwilTYSxNN7V19-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51); text-align: left; white-space: nowrap;&quot;&gt;4. 析构阶段&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="225" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="_9FaNPLwilTYSxNN7V19-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51); white-space: nowrap;&quot;&gt;3. 构造阶段&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="215" y="480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
