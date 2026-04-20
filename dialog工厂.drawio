@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="5">
+<mxfile host="app.diagrams.net" pages="6">
   <diagram id="W4EcqGUdJFov06eHYmou" name="第 1 页">
     <mxGraphModel dx="2163" dy="1212" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -508,6 +508,65 @@
         </mxCell>
         <mxCell id="EosxC9jJ9wmfkUmakclf-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;View 层: 图形界面与交互&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="223.5" x="264.25" y="172" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="FS_0Brybz3JKxS6Fokhu" name="第 7 页">
+    <mxGraphModel dx="1546" dy="1091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-24" edge="1" parent="1" source="is1V6KhWNz_9yTGwKyxE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="is1V6KhWNz_9yTGwKyxE-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="129" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-1" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" value="用户在画布右键点击&#xa;选取三角形" vertex="1">
+          <mxGeometry height="132" width="210" x="10" y="63.5" as="geometry" />
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-3" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="图层状态判定&#xa;(Test模式?)" vertex="1">
+          <mxGeometry height="174" width="174" x="280" y="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="清除高亮框&#xa;并退出" vertex="1">
+          <mxGeometry height="78" width="110" x="532" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="绘制青色虚线高亮框&#xa;提取当前颜色&#xa;弹出非模态面板" vertex="1">
+          <mxGeometry height="102" width="174" x="500" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-10" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=18;" value="保存至 customColors 字典&#xa;(Controller 内部记录)" vertex="1">
+          <mxGeometry height="78" width="215" x="827" y="159.25" as="geometry" />
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-11" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="极速重绘 redrawLowPolyFast&#xa;刷新 Test 与 LowPoly 图层" vertex="1">
+          <mxGeometry height="103.5" width="240" x="1100" y="146.5" as="geometry" />
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-14" edge="1" parent="1" source="is1V6KhWNz_9yTGwKyxE-3" style="startArrow=none;endArrow=block;exitX=1;exitY=0.14;entryX=0;entryY=0.41;rounded=0;labelBackgroundColor=none;fontSize=17;" target="is1V6KhWNz_9yTGwKyxE-4" value="否">
+          <mxGeometry relative="1" x="0.0096" y="11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-15" edge="1" parent="1" source="is1V6KhWNz_9yTGwKyxE-3" style="startArrow=none;endArrow=block;exitX=1;exitY=1;entryX=0;entryY=0.5;rounded=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;" target="is1V6KhWNz_9yTGwKyxE-7" value="是">
+          <mxGeometry relative="1" x="-0.0295" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="680" y="185.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-20" edge="1" parent="1" source="is1V6KhWNz_9yTGwKyxE-7" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="is1V6KhWNz_9yTGwKyxE-10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1382" y="177.515" as="sourcePoint" />
+            <mxPoint x="1410" y="178.27999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-23" connectable="0" parent="is1V6KhWNz_9yTGwKyxE-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=17;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;用户调节RGB值&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; color: rgb(51, 51, 51);&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;点击 Confirm 确认&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1468" y="-1" as="geometry">
+            <mxPoint x="10" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is1V6KhWNz_9yTGwKyxE-22" edge="1" parent="1" source="is1V6KhWNz_9yTGwKyxE-10" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.5;rounded=0;" target="is1V6KhWNz_9yTGwKyxE-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
