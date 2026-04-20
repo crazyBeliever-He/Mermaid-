@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" pages="4">
   <diagram id="W4EcqGUdJFov06eHYmou" name="第 1 页">
-    <mxGraphModel dx="3383" dy="1433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1480" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="MEbIilUHjNMpxExCpZqo-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="364" width="2430" y="150" as="geometry" />
+          <mxGeometry height="364" width="2180" y="150" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-35" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MEbIilUHjNMpxExCpZqo-14" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -23,34 +23,34 @@
           <mxGeometry height="150" width="290" x="880" y="560.5" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" value="用户交互触发&#xa;openDialog" vertex="1">
-          <mxGeometry height="78" width="126" x="45" y="287" as="geometry" />
+          <mxGeometry height="78" width="126" x="30" y="287" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;" value="获取类型名 typeName&#xa;QMetaType::fromType().name()" vertex="1">
-          <mxGeometry height="78" width="256" x="246" y="287" as="geometry" />
+          <mxGeometry height="78" width="256" x="190" y="286.5" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-8" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=18;" value="判断 dialogMap 中&#xa;是否已存在该 typeName?" vertex="1">
-          <mxGeometry height="257" width="257" x="552" y="197" as="geometry" />
+          <mxGeometry height="257" width="257" x="470" y="197" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-9" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;" value="调用工厂 &#xa;createDialog(typeName)" vertex="1">
-          <mxGeometry height="78" width="230" x="906" y="332" as="geometry" />
+          <mxGeometry height="78" width="230" x="790" y="376" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-10" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;" value="执行 CreatorFn 生成 Dialog 实例&#xa;并闭包绑定 dataSubmitted 信号" vertex="1">
-          <mxGeometry height="126" width="280" x="1241" y="296" as="geometry" />
+          <mxGeometry height="126" width="280" x="1090" y="310" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-11" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;" value="存入 dialogMap 缓存" vertex="1">
-          <mxGeometry height="54" width="176" x="1606" y="332" as="geometry" />
+          <mxGeometry height="54" width="176" x="1430" y="346" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-12" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;" value="直接从 dialogMap&#xa;获取指针" vertex="1">
-          <mxGeometry height="78" width="155" x="1890" y="197" as="geometry" />
+          <mxGeometry height="78" width="155" x="1670" y="220" as="geometry" />
         </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-13" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" value="更新数据：dialog-&amp;gt;setData(...)&#xa;显示弹窗：dialog-&amp;gt;show() / raise()" vertex="1">
-          <mxGeometry height="126" width="300" x="2090" y="239" as="geometry" />
+        <mxCell id="MEbIilUHjNMpxExCpZqo-13" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" value="更新数据：dialog-&gt;setData(...)&#xa;显示弹窗：dialog-&gt;show() / raise()" vertex="1">
+          <mxGeometry height="126" width="300" x="1860" y="262.5" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-14" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="DialogFactory::m_creators 映射表&#xa;(QString -&amp;gt; CreatorFn Lambda)" vertex="1">
-          <mxGeometry height="111" width="326" x="1370" y="580.5" as="geometry" />
+          <mxGeometry height="111" width="326" x="1380" y="580" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-15" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Widget::dialogMap 缓存表&#xa;(QString -&amp;gt; BaseDialog* 实例)" vertex="1">
-          <mxGeometry height="87" width="302" x="1743" y="30" as="geometry" />
+          <mxGeometry height="87" width="302" x="1510" y="40" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-16" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-3" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.49;rounded=0;" target="MEbIilUHjNMpxExCpZqo-4" value="">
           <mxGeometry relative="1" as="geometry">
@@ -77,68 +77,53 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-21" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-8" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.62;entryX=0;entryY=0.5;rounded=0;labelBackgroundColor=none;fontSize=18;" target="MEbIilUHjNMpxExCpZqo-9" value="否 (首次调用)">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="882" y="375" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="MEbIilUHjNMpxExCpZqo-21" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-8" style="startArrow=none;endArrow=block;exitX=1;exitY=1;entryX=0;entryY=0.5;rounded=0;labelBackgroundColor=none;fontSize=18;exitDx=0;exitDy=0;" target="MEbIilUHjNMpxExCpZqo-9" value="否 (首次调用)">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-22" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-9" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.34;entryX=0;entryY=0.5;rounded=0;" target="MEbIilUHjNMpxExCpZqo-10" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1237" y="359" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="MEbIilUHjNMpxExCpZqo-22" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-9" style="startArrow=none;endArrow=block;exitX=1;exitY=0.34;entryX=0;entryY=0.5;rounded=0;" target="MEbIilUHjNMpxExCpZqo-10" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-23" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-10" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="MEbIilUHjNMpxExCpZqo-11" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-24" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-8" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.34;entryX=0;entryY=0.6;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=18;labelBackgroundColor=none;" target="MEbIilUHjNMpxExCpZqo-12" value="是 (复用实例)">
+        <mxCell id="MEbIilUHjNMpxExCpZqo-24" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-8" style="startArrow=none;endArrow=block;exitX=1;exitY=0;entryX=0;entryY=0.5;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=18;labelBackgroundColor=none;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="MEbIilUHjNMpxExCpZqo-12" value="是 (复用实例)">
           <mxGeometry relative="1" x="-0.0005" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEbIilUHjNMpxExCpZqo-25" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-11" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.75;rounded=0;entryDx=0;entryDy=0;" target="MEbIilUHjNMpxExCpZqo-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbIilUHjNMpxExCpZqo-26" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-12" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="MEbIilUHjNMpxExCpZqo-13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1860" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEbIilUHjNMpxExCpZqo-27" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-9" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.82;entryX=0.31;entryY=0;rounded=0;labelBackgroundColor=none;fontSize=18;" target="MEbIilUHjNMpxExCpZqo-14" value="查询并获取 Lambda">
+          <mxGeometry relative="1" x="-0.2668" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="882" y="261" />
-              <mxPoint x="1400" y="261" />
+              <mxPoint x="1180" y="490" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-25" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-11" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.92;rounded=0;" target="MEbIilUHjNMpxExCpZqo-13" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1870" y="359" />
-              <mxPoint x="1910" y="359" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-26" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-12" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.18;rounded=0;" target="MEbIilUHjNMpxExCpZqo-13" value="">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="MEbIilUHjNMpxExCpZqo-28" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-11" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.25;exitY=0;entryX=0.3;entryY=1;rounded=0;labelBackgroundColor=none;fontSize=18;exitDx=0;exitDy=0;" target="MEbIilUHjNMpxExCpZqo-15" value="写入实例指针">
+          <mxGeometry relative="1" x="0.1921" y="11" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-27" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-9" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.82;entryX=0.31;entryY=0;rounded=0;" target="MEbIilUHjNMpxExCpZqo-14" value="查询并获取 Lambda">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1220" y="440" />
-              <mxPoint x="1280" y="490" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-28" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-11" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.68;exitY=0;entryX=0.3;entryY=1;rounded=0;labelBackgroundColor=none;fontSize=18;" target="MEbIilUHjNMpxExCpZqo-15" value="写入实例指针">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="MEbIilUHjNMpxExCpZqo-29" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-15" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.7;exitY=1;entryX=0.5;entryY=0;rounded=0;entryDx=0;entryDy=0;fontSize=18;" target="MEbIilUHjNMpxExCpZqo-12" value="读取实例指针">
-          <mxGeometry relative="1" x="-0.3245" y="21" as="geometry">
-            <mxPoint x="-1" as="offset" />
+        <mxCell id="MEbIilUHjNMpxExCpZqo-29" edge="1" parent="1" source="MEbIilUHjNMpxExCpZqo-15" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.7;exitY=1;entryX=0.5;entryY=0;rounded=0;entryDx=0;entryDy=0;fontSize=18;labelBackgroundColor=none;" target="MEbIilUHjNMpxExCpZqo-12" value="读取实例指针">
+          <mxGeometry relative="1" x="-0.0387" y="6" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=19;" value="阶段二：动态调度与缓存" vertex="1">
-          <mxGeometry height="30" width="270" x="70" y="170" as="geometry" />
+          <mxGeometry height="30" width="270" y="150" as="geometry" />
         </mxCell>
         <mxCell id="MEbIilUHjNMpxExCpZqo-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=19;" value="阶段一：静态自动注册" vertex="1">
           <mxGeometry height="30" width="209" x="221" y="534" as="geometry" />
@@ -308,13 +293,13 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8r6GCkREh0hCPIPiG5tU-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+        <mxCell id="8r6GCkREh0hCPIPiG5tU-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="" vertex="1">
           <mxGeometry height="640" width="412" x="60" y="430" as="geometry" />
         </mxCell>
-        <mxCell id="8r6GCkREh0hCPIPiG5tU-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+        <mxCell id="8r6GCkREh0hCPIPiG5tU-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="" vertex="1">
           <mxGeometry height="542" width="400" x="500" y="258" as="geometry" />
         </mxCell>
-        <mxCell id="8r6GCkREh0hCPIPiG5tU-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+        <mxCell id="8r6GCkREh0hCPIPiG5tU-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="" vertex="1">
           <mxGeometry height="820" width="392" x="928" y="20" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="主控逻辑 (C++ / Qt)" vertex="1">
