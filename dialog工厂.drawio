@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="3">
+<mxfile host="app.diagrams.net" pages="4">
   <diagram id="W4EcqGUdJFov06eHYmou" name="第 1 页">
     <mxGraphModel dx="3383" dy="1433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -317,6 +317,118 @@
               <mxPoint x="570" y="1590" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ScyOotLx-93j8x3LaCpO" name="第 4 页">
+    <mxGraphModel dx="2009" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-1" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" value="主程序发起显著性检测请求" vertex="1">
+          <mxGeometry height="38" width="220" x="30" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-2" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="多级分发&#xa;(switch 实现)" vertex="1">
+          <mxGeometry height="164" width="164" x="270" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=18;" value="生成 UUID 临时文件路径&#xa;(in_uuid.png / out_uuid.png)&#xa;&#xa;拉起独立进程 (Saliency.exe)&#xa;传入安全隔离的临时文件" vertex="1">
+          <mxGeometry height="113" width="256" x="424" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-5" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="超时监控&#xa;(30000 ms)" vertex="1">
+          <mxGeometry height="148" width="148" x="700" y="39.5" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" value="强制杀死进程&#xa;清理临时文件" vertex="1">
+          <mxGeometry height="75" width="150" x="840" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="读取输出文件&#xa;清理物理文件释放空间" vertex="1">
+          <mxGeometry height="75" width="210" x="1820" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-8" parent="1" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="返回显著性图" vertex="1">
+          <mxGeometry height="38" width="114" x="2080" y="319.5" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-9" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="构建连续内存缓冲区&#xa;显式调用黑盒 DLL API" vertex="1">
+          <mxGeometry height="75" width="203" x="977" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-10" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);fontSize=18;" value="执行状态校验&#xa;(result == 0?)" vertex="1">
+          <mxGeometry height="165" width="165" x="1230" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-11" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="深拷贝数据回 QImage&#xa;由 Qt 接管内存" vertex="1">
+          <mxGeometry height="75" width="205" x="1825" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-12" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" value="记录错误状态码与遗言日志" vertex="1">
+          <mxGeometry height="53" width="240" x="1395" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-13" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="执行内置轻量级原生算法&#xa;(颜色直方图与空间分布 CSD)" vertex="1">
+          <mxGeometry height="75" width="251" x="1560" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-14" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="生成基础显著性图" vertex="1">
+          <mxGeometry height="53" width="180" x="1850" y="591" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-15" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-1" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.48;entryX=0;entryY=0.5;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-16" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-2" style="startArrow=none;endArrow=block;exitX=0.94;exitY=0;entryX=0;entryY=0.5;rounded=0;fontSize=17;labelBackgroundColor=none;" target="y-i0jARtl0KJnDMO5UR8-3" value="1. 首选: EXE跨进程">
+          <mxGeometry relative="1" x="-0.1354" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-17" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-3" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;entryDx=0;entryDy=0;" target="y-i0jARtl0KJnDMO5UR8-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="750" y="94.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-19" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-5" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.51;rounded=0;exitDx=0;exitDy=0;fontSize=17;labelBackgroundColor=none;" target="y-i0jARtl0KJnDMO5UR8-6" value="超时或崩溃&#xa;(捕获 stderr)">
+          <mxGeometry relative="1" x="-0.5241" y="-26" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-20" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-5" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontSize=17;" target="y-i0jARtl0KJnDMO5UR8-7" value="成功完成&#xa;(退出码 0)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-21" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-7" style="startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0.4;entryY=0.01;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-22" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-6" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0.465;entryY=-0.004;rounded=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;entryPerimeter=0;" target="y-i0jARtl0KJnDMO5UR8-9" value="触发降级">
+          <mxGeometry relative="1" x="0.0963" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-23" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-2" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;" target="y-i0jARtl0KJnDMO5UR8-9" value="2. 降级: DLL调用">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-24" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-9" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-25" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-10" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontSize=17;" target="y-i0jARtl0KJnDMO5UR8-11" value="成功">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-26" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-11" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-27" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-10" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.5;rounded=0;exitDx=0;exitDy=0;fontSize=17;labelBackgroundColor=none;" target="y-i0jARtl0KJnDMO5UR8-12" value="失败/崩溃&#xa;(捕获异常)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-28" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-12" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.48;entryY=0.029;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=17;labelBackgroundColor=none;" target="y-i0jARtl0KJnDMO5UR8-13" value="触发兜底">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-29" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-2" style="startArrow=none;endArrow=block;exitX=1;exitY=0.71;entryX=0;entryY=0.5;rounded=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;" target="y-i0jARtl0KJnDMO5UR8-13" value="3. 兜底: 原生算法">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-30" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-13" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-31" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-14" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.41;entryY=1;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-8" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
