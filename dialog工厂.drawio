@@ -216,7 +216,7 @@
           <mxGeometry height="53" width="240" x="922.5" y="480" as="geometry" />
         </mxCell>
         <mxCell id="y-i0jARtl0KJnDMO5UR8-13" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="执行内置轻量级原生算法&#xa;(颜色直方图与空间分布 CSD)" vertex="1">
-          <mxGeometry height="75" width="251" x="917" y="611" as="geometry" />
+          <mxGeometry height="75" width="251" x="922.5" y="611" as="geometry" />
         </mxCell>
         <mxCell id="y-i0jARtl0KJnDMO5UR8-14" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="生成基础显著性图" vertex="1">
           <mxGeometry height="53" width="180" x="1220" y="622" as="geometry" />
@@ -242,8 +242,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y-i0jARtl0KJnDMO5UR8-20" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-5" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontSize=17;" target="y-i0jARtl0KJnDMO5UR8-7" value="成功完成&#xa;(退出码 0)">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="y-i0jARtl0KJnDMO5UR8-20" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-5" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontSize=17;" target="y-i0jARtl0KJnDMO5UR8-7" value="成功完成">
+          <mxGeometry relative="1" x="-0.0178" y="22" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="y-i0jARtl0KJnDMO5UR8-21" edge="1" parent="1" source="y-i0jARtl0KJnDMO5UR8-7" style="startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0.4;entryY=0.01;rounded=0;" target="y-i0jARtl0KJnDMO5UR8-8" value="">
           <mxGeometry relative="1" as="geometry" />
