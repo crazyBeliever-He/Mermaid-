@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="4">
+<mxfile host="app.diagrams.net" pages="5">
   <diagram id="W4EcqGUdJFov06eHYmou" name="第 1 页">
     <mxGraphModel dx="2990" dy="1212" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -419,6 +419,92 @@
           <mxGeometry relative="1" x="0.4116" y="2" as="geometry">
             <mxPoint x="-16" y="9" as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="YFNCvMd4D7_bKd88Rdkh" name="第 6 页">
+    <mxGraphModel dx="1172" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EosxC9jJ9wmfkUmakclf-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="152" width="535" x="120" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="128" width="385" x="279" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="128" width="712" x="20" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" value="用户操作&#xa;鼠标拖拽/参数调整" vertex="1">
+          <mxGeometry height="78" width="196" x="278" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=18;" value="ImageWidget&#xa;双缓冲画布 / 图像渲染" vertex="1">
+          <mxGeometry height="78" width="222" x="74.5" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=18;" value="BaseDialog&#xa;动态工厂弹窗 / 参数输入" vertex="1">
+          <mxGeometry height="78" width="238" x="455.5" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=17;" value="ImageController&#xa;全局状态机 / 算法调度核心" vertex="1">
+          <mxGeometry height="61" width="254" x="344.5" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-8" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="ImageModel&#xa;原始图像 / 中间缓存池 / 状态枚举" vertex="1">
+          <mxGeometry height="102" width="274" x="334.5" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-9" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-4" style="startArrow=none;endArrow=block;exitX=0.25;exitY=1;entryX=0.5;entryY=0;rounded=0;labelBackgroundColor=none;exitDx=0;exitDy=0;fontSize=17;" target="EosxC9jJ9wmfkUmakclf-5" value="1. 触发界面事件">
+          <mxGeometry relative="1" x="0.1486" y="-11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-10" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-4" style="startArrow=none;endArrow=block;exitX=0.75;exitY=1;entryX=0.5;entryY=0;rounded=0;labelBackgroundColor=none;fontSize=17;" target="EosxC9jJ9wmfkUmakclf-6" value="1. 输入处理参数">
+          <mxGeometry relative="1" x="0.1853" y="13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-11" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-5" style="startArrow=none;endArrow=block;exitX=0.3;exitY=1;entryX=0;entryY=0;rounded=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;" target="EosxC9jJ9wmfkUmakclf-7" value="2. 异步信号 Signals&#xa;如: requestProcess">
+          <mxGeometry relative="1" x="0.0435" y="-11" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-12" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-6" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.77;entryY=0;rounded=0;labelBackgroundColor=none;fontSize=17;" target="EosxC9jJ9wmfkUmakclf-7" value="2. 异步信号 Signals&#xa;如: paramsUpdated">
+          <mxGeometry relative="1" x="-0.2341" y="9" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-13" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-7" style="startArrow=none;endArrow=block;exitX=0.3;exitY=1;entryX=0.25;entryY=0;rounded=0;labelBackgroundColor=none;fontSize=18;entryDx=0;entryDy=0;" target="EosxC9jJ9wmfkUmakclf-8" value="3. 调用底层算法&#xa;更新状态与图像矩阵">
+          <mxGeometry relative="1" x="-0.0912" y="-33" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-14" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-8" style="startArrow=none;endArrow=block;exitX=0.75;exitY=0;entryX=0.68;entryY=1;rounded=0;labelBackgroundColor=none;fontSize=18;exitDx=0;exitDy=0;" target="EosxC9jJ9wmfkUmakclf-7" value="4. 数据就绪信号&#xa;如: dataReady">
+          <mxGeometry relative="1" x="0.0521" y="-43" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-15" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-7" style="startArrow=none;endArrow=block;exitX=0.41;exitY=0;entryX=1;entryY=0.88;rounded=0;labelBackgroundColor=none;fontSize=17;" target="EosxC9jJ9wmfkUmakclf-5" value="5. 通知视图刷新&#xa;如: updateView">
+          <mxGeometry relative="1" x="-0.1458" y="-8" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-16" edge="1" parent="1" source="EosxC9jJ9wmfkUmakclf-5" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.56;exitY=1;entryX=0;entryY=0.5;rounded=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;" target="EosxC9jJ9wmfkUmakclf-8" value="6. 读取缓存 Read-only&#xa;获取 QPixmap 进行渲染">
+          <mxGeometry relative="1" x="-0.1876" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="150" y="320" />
+              <mxPoint x="130" y="430" />
+              <mxPoint x="176" y="624" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;Model 层: 数据与状态管理&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="233" x="120" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;Controller 层: 业务调度大脑&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="229" x="357" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="EosxC9jJ9wmfkUmakclf-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;View 层: 图形界面与交互&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="223.5" x="264.25" y="172" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
