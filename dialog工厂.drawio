@@ -305,27 +305,27 @@
     </mxGraphModel>
   </diagram>
   <diagram id="1ILf-Wnlqa2waxeXjkf4" name="第 5 页">
-    <mxGraphModel dx="1480" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1272" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="8r6GCkREh0hCPIPiG5tU-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="500" width="400" x="70" y="90" as="geometry" />
+          <mxGeometry height="500" width="360" x="140" y="90" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="458" width="410" x="490" y="132" as="geometry" />
+          <mxGeometry height="458" width="360" x="520" y="132" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="500" width="380" x="920" y="90" as="geometry" />
+          <mxGeometry height="500" width="340" x="898" y="90" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="主控逻辑 (C++ / Qt)" vertex="1">
-          <mxGeometry height="54" width="172" x="1024" y="138" as="geometry" />
+          <mxGeometry height="54" width="172" x="982" y="138" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="主机内存缓冲&#xa;(JFAPoint* / float*)" vertex="1">
-          <mxGeometry height="78" width="196" x="970" y="230" as="geometry" />
+          <mxGeometry height="78" width="196" x="920" y="230" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" value="异常捕获与日志记录" vertex="1">
-          <mxGeometry height="54" width="174" x="1022" y="490" as="geometry" />
+          <mxGeometry height="54" width="174" x="982" y="493" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" value="jump_flooding_api" vertex="1">
           <mxGeometry height="54" width="164" x="611.5" y="206" as="geometry" />
@@ -337,16 +337,16 @@
           <mxGeometry height="77" width="129" x="630.5" y="481.5" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-10" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="CUDA环境检测&#xa;安全校验" vertex="1">
-          <mxGeometry height="140" width="170" x="185" y="120" as="geometry" />
+          <mxGeometry height="140" width="170" x="235" y="120" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-11" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="设备显存&#xa;(cudaMalloc)" vertex="1">
-          <mxGeometry height="78" width="151" x="194.5" y="290" as="geometry" />
+          <mxGeometry height="78" width="151" x="244.5" y="290" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-12" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="jfa_step_kernel&#xa;Log_2(N) 轮迭代" vertex="1">
-          <mxGeometry height="78" width="146" x="110" y="403.5" as="geometry" />
+          <mxGeometry height="78" width="146" x="160" y="403.5" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-13" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="feature_flow_kernel&#xa;并行流场计算" vertex="1">
-          <mxGeometry height="78" width="176" x="185" y="507" as="geometry" />
+          <mxGeometry height="78" width="176" x="232" y="507" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-14" edge="1" parent="1" source="8r6GCkREh0hCPIPiG5tU-4" style="startArrow=none;endArrow=block;exitX=0.25;exitY=1;entryX=0.5;entryY=0;rounded=0;labelBackgroundColor=none;fontSize=17;exitDx=0;exitDy=0;" target="8r6GCkREh0hCPIPiG5tU-5" value="准备数据">
           <mxGeometry relative="1" x="-0.0147" as="geometry">
@@ -356,8 +356,8 @@
         <mxCell id="8r6GCkREh0hCPIPiG5tU-15" edge="1" parent="1" source="8r6GCkREh0hCPIPiG5tU-4" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.72;exitY=1;entryX=0.57;entryY=-0.01;rounded=0;labelBackgroundColor=none;fontSize=17;" target="8r6GCkREh0hCPIPiG5tU-6" value="读取错误">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1220" y="290" />
-              <mxPoint x="1200" y="460" />
+              <mxPoint x="1200" y="290" />
+              <mxPoint x="1180" y="460" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -401,8 +401,8 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-25" edge="1" parent="1" source="8r6GCkREh0hCPIPiG5tU-9" style="dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="8r6GCkREh0hCPIPiG5tU-6" value="穿透传递">
-          <mxGeometry relative="1" x="-0.2432" y="13" as="geometry">
-            <mxPoint as="offset" />
+          <mxGeometry relative="1" x="-0.3859" y="9" as="geometry">
+            <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-26" edge="1" parent="1" source="8r6GCkREh0hCPIPiG5tU-11" style="curved=1;startArrow=none;endArrow=block;strokeWidth=1;exitX=1;exitY=0.41;entryX=0.5;entryY=1;rounded=0;strokeColor=default;labelBackgroundColor=none;fontSize=17;entryDx=0;entryDy=0;" target="8r6GCkREh0hCPIPiG5tU-5" value="唯一一次数据回写&#xa;消除 PCIe 瓶颈">
@@ -415,13 +415,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;CUDA 加速库 GPU Device - 显存内部驻留&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="390" x="75" y="90" as="geometry" />
+          <mxGeometry height="30" width="390" x="125" y="90" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;ABI 隔离边界 DLL Interface - extern C&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="317.5" x="541.25" y="132" as="geometry" />
         </mxCell>
         <mxCell id="8r6GCkREh0hCPIPiG5tU-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;宿主程序 Host Application - CPU 内存&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="342" x="939" y="90" as="geometry" />
+          <mxGeometry height="30" width="342" x="897" y="90" as="geometry" />
         </mxCell>
         <mxCell id="mWuQqlP3AsC61kdkwZHs-4" edge="1" parent="1" source="8r6GCkREh0hCPIPiG5tU-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=10;entryPerimeter=0;strokeColor=default;dashed=1;" target="8r6GCkREh0hCPIPiG5tU-9">
           <mxGeometry relative="1" as="geometry" />
